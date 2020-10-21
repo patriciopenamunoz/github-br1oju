@@ -1,0 +1,31 @@
+.graph-dashboard{
+    padding: 20px;
+}
+
+.graph-column, .graph-inner-panel {
+    display: flex;
+}
+
+.graph-panel, .graph-graph {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.graph-graph {
+    height: 200px;
+}
+
+.graph-panel {
+    border: 1px solid;
+    border-bottom: none;
+    border-right: none;
+    padding: 10px;
+}
+
+.graph-dashboard>.graph-column:last-child>.graph-panel {
+    border-bottom: 1px solid;
+}
+
+.graph-column>.graph-panel:last-child {
+    border-right: 1px solid;
+}
